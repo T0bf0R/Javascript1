@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inlämningsuppgift 1 by Tobias</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <script src="https://kit.fontawesome.com/004ed3d97f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <nav class="navbar is-dark has-text-centered .is-capitalized .has-text-weight-bold is-size-3">Register User Data</nav>
+  <section id="form" class="card">
+    <div class="card-content">
+      <div class="field">
+        <label class="label ">First Name</label>
+        <div class="control has-icons-left has-icons-right">
+          <input id="firstName" class="input" type="text" placeholder="First name">
+          <span class="icon is-small is-left">
+            <i class="fa fa-user"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fa fa-check"></i>
+          </span>
+        </div>
+      </div>
+      <div class="field">
+        <label class="label ">Last Name</label>
+        <div class="control has-icons-left has-icons-right">
+          <input id="lastName" class="input" type="text" placeholder="Last name">
+          <span class="icon is-small is-left">
+            <i class="fa fa-user"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fa fa-check"></i>
+          </span>
+        </div>
+      </div>
+      <div class="field">
+        <label id="email" class="label ">Email</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-danger" type="email" placeholder="Email input">
+          <span class="icon is-small is-left">
+            <i class="fa fa-envelope"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fa fa-warning"></i>
+          </span>
+        </div>
+        <p class="help is-danger">This email is invalid</p>
+      </div>
+
+      <div class="field is-grouped is-grouped-centered">
+        <div class="control">
+          <button id="submitBtn" class="button is-primary is-medium">Submit</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div id="output">
+        <div class="card">
+          <div class="card-content userData"> 
+            <h3>${userData.firstName} ${userData.lastName}</h3>
+            <p>${userData.email}</p>
+          </div>  
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
